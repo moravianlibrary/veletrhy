@@ -53,7 +53,7 @@
     "publishChangesOnly": true,
     "robotsSwitcher": false,
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
-    "favicon": false,
+    "favicon": "@PROJECT_PATH@/assets/images/logo-favicon-80x57.png",
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
