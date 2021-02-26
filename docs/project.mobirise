@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "veletrhy.mzk.cz",
-    "currentPage": "promedia.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "directm4",
       "title": "DirectM4",
@@ -53,7 +53,7 @@
     "publishChangesOnly": true,
     "robotsSwitcher": false,
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
-    "favicon": "@PROJECT_PATH@/assets/images/logo-favicon-80x57.png",
+    "favicon": "@PROJECT_PATH@/assets/images/mzk-favicon-32x32-1.png",
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
