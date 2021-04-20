@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "veletrhy.mzk.cz",
-    "currentPage": "veletrh-bologna.html",
+    "currentPage": "veletrh-frankfurt.html",
     "theme": {
       "name": "directm4",
       "title": "DirectM4",
@@ -47,7 +47,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 413,
+    "uniqCompNum": 419,
     "versionPublish": "5.2.0",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
@@ -1075,88 +1075,191 @@
           "_isSecondary": true,
           "typeCompatible": "type",
           "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
+            "padding-top": "(@paddingTop * 20px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value",
               "& when (@gradientBg)": {
-                "background": "linear-gradient(@bg-value, @color2)"
+                "background": "linear-gradient(90deg, @bg-value, @color2)"
               }
             },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
-            ".mbr-section-title": {
-              "letter-spacing": "0.1em",
-              "color": "#232323",
-              "margin-bottom": "2rem",
-              "text-align": "center"
+            ".mbr-overlay": {
+              "background": "linear-gradient(90deg, @overlayColor, @overlayColor2)"
             },
-            ".mbr-section-subtitle": {
-              "color": "#232323",
-              "margin-bottom": "2rem",
-              "letter-spacing": "0.03em"
+            ".mbr-section-btn": {
+              "margin-left": "-0.8rem"
             },
-            ".btn": {
-              "margin": "0px !important"
-            },
-            ".second-col": {
-              "display": "flex",
-              "-webkit-align-items": "center",
-              "align-items": "center",
-              "-webkit-justify-content": "center",
-              "justify-content": "center"
-            },
-            ".carousel-item": {
-              "-webkit-justify-content": "center",
-              "justify-content": "center",
-              ".media-container-row": {
-                "-webkit-flex-grow": "1",
-                "flex-grow": "1"
-              },
-              ".wrap-img": {
-                "text-align": "center",
-                "img": {
-                  "max-height": "250px",
-                  "width": "auto",
-                  "max-width": "100%"
-                }
+            ".text-content": {
+              "padding-right": "1.5rem",
+              "& when (@reverseContent)": {
+                "padding-right": "0",
+                "padding-left": "1.5rem"
               }
             },
-            ".carousel": {
-              "display": "flex",
-              "-webkit-flex-direction": "column-reverse",
-              "flex-direction": "column-reverse",
-              "width": "100%"
+            ".main-row": {
+              "& when (@reverseContent)": {
+                "-webkit-flex-direction": "row-reverse",
+                "-ms-flex-direction": "row-reverse"
+              }
             },
-            ".carousel-indicators": {
-              "display": "block",
+            ".mbr-text,.mbr-section-btn": {
+              "color": "#767676"
+            },
+            ".mbr-figure img": {
+              "-webkit-box-shadow": "0px 0px 30px fade(spin(desaturate(@infoColor, 75%), 12%), 30%)",
+              "box-shadow": "0px 0px 30px fade(spin(desaturate(@infoColor, 75%), 12%), 30%)",
+              "border-radius": ".25rem"
+            },
+            ".counter-container": {
+              "padding": "1rem 0",
               "position": "relative",
-              "margin-top": "2rem",
-              "text-align": "center",
-              "li": {
-                "width": "7px",
-                "height": "7px",
-                "border-radius": "50%",
-                "background-color": "@bulletsColor",
-                "display": "inline-block",
-                "border": "4px solid @bulletsColor",
-                "&.active": {
-                  "border-color": "softlight(@bulletsColor, #000000)"
+              "ul": {
+                "margin-bottom": "0",
+                "padding-left": "1.5rem",
+                "li": {
+                  "margin-bottom": "1rem",
+                  "& when (@stylizedCounters)": {
+                    "list-style": "none",
+                    "&:before": {
+                      "font-family": "MobiriseIcons !important",
+                      "content": "'\\e966'",
+                      "position": "absolute",
+                      "left": "0px",
+                      "padding-top": "2px",
+                      "display": "inline-block",
+                      "text-align": "center",
+                      "margin": "4px 0px",
+                      "line-height": "10px",
+                      "transition": "all .2s",
+                      "width": "16px",
+                      "height": "16px",
+                      "font-size": "16px !important",
+                      "font-weight": "500",
+                      "background": "none",
+                      "color": "@counterColor"
+                    }
+                  }
                 }
               }
             },
-            "@media (max-width: 768px)": {
-              ".second-col": {
-                "padding-top": "2rem"
+            "@media (max-width: 991px)": {
+              ".main-row": {
+                "margin": "0"
+              },
+              ".mbr-section-title,.mbr-text,.list,.mbr-section-btn": {
+                "text-align": "center !important"
+              },
+              ".text-content": {
+                "padding": "0"
               }
             }
           },
-          "_name": "extSlider2",
+          "_name": "extHeader14",
           "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"extSlider testimonials-slider\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-testimonials-slider\" data-interval=\"false\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"range\" inline title=\"Items\" name=\"slidesCount\" min=\"1\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"showAutoplay\">\n        <input type=\"range\" inline title=\"Autoplay Interval (ms)\" name=\"interval\" min=\"1000\" max=\"8000\" step=\"1000\" value=\"4000\" condition=\"showAutoplay\">\n        <input type=\"color\" title=\"Bullets Color\" name=\"bulletsColor\" value=\"#f6f7f8\" selected>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#dddfe0\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=l8UXhtqV6hU\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#cccccc\" condition=\"gradientBg &&bg.type=='color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"main container\">\n        <h2 class=\"mbr-section-title pb-3 mbr-fonts-style mbr-bold align-left\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Londýnský knižní veletrh 2021 online.<div><br></div></h2>\n        <div class=\"row\">\n            <div class=\"first-col col-md-6\">\n                <h3 class=\"mbr-section-subtitle  mbr-fonts-style align-left mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">Přihlašování do české expozice na národním stánku pro vystavovatele (nakladatele a tiskárny) je spuštěno. Hlásit se můžete až do 27. dubna 2021.<br><br>Londýnský knižní veletrh se přesouvá do online prostoru pro rok 2021. Na další informace a pokyny od veletrhu čekáme. V případně potřeby kontaktujte <a href=\"mailto:klara.pribylova@mzk.cz\" class=\"text-primary\">klara.pribylova@mzk.cz</a><br></h3>\n                <div class=\"mbr-section-btn align-left py-2\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-md btn-info\" href=\"https://docs.google.com/forms/d/1bPX1hG7M9HvGsa-aSieLCxtGQk2hvsZgDzQPVYq3uz8/viewform?edit_requested=true\" data-app-placeholder=\"Type Text\" target=\"_blank\">REGISTRAČNÍ FORMULÁŘ PRO ZÁJEMCE</a></div>\n            </div> \n            \n            <div class=\"second-col col-md-6\">\n                <div class=\"carousel slide slides\" role=\"listbox\" data-pause=\"true\" data-keyboard=\"false\" data-ride=\"{{showAutoplay ? 'carousel' : 'false'}}\" data-interval=\"{{showAutoplay ? interval : 'false'}}\">\n                    <ol class=\"carousel-indicators\">\n                        <li data-slide-to=\"0\" class=\"active\"></li>\n                        <li mbr-if=\"slidesCount > 1\" data-slide-to=\"1\"></li>\n                        <li mbr-if=\"slidesCount > 2\" data-slide-to=\"2\"></li>\n                        <li mbr-if=\"slidesCount > 3\" data-slide-to=\"3\"></li>\n                        <li mbr-if=\"slidesCount > 4\" data-slide-to=\"4\"></li>\n                        <li mbr-if=\"slidesCount > 5\" data-slide-to=\"5\"></li>\n                        <li mbr-if=\"slidesCount > 6\" data-slide-to=\"6\"></li>\n                        <li mbr-if=\"slidesCount > 7\" data-slide-to=\"7\"></li>\n                        <li mbr-if=\"slidesCount > 8\" data-slide-to=\"8\"></li>\n                        <li mbr-if=\"slidesCount > 9\" data-slide-to=\"9\"></li>\n                    </ol>\n                    <div class=\"carousel-inner\" mbr-list mbr-list-grow=\"slidesCount\" data-visible=\"{{visibleSlides}}\">\n\n                        <div class=\"carousel-item \">\n                            <div class=\"media-container-row\">\n                                <div class=\"col-md-12\">\n                                    <div class=\"wrap-img \">\n                                        <img src=\"@PROJECT_PATH@/assets/images/earls-court-exhibition-centre-from-warwick-road-sw5-geograph.org.uk-1262513-640x479.jpg\" class=\"img-responsive clients-img\" alt title>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    \n                        \n\n                        \n                    </div>   \n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "steKNWdk6D",
-          "_anchor": "extSlider2-b0",
+          "_customHTML": "<section class=\"extHeader\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" plugins=\"mobirise-icons\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show List\" name=\"showList\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" condition=\"showList\">\n        <input type=\"color\" title=\"Counter Bg Color\" name=\"counterColor\" value=\"#188ef4\" condition=\"stylizedCounters&&showList\">\n        <input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#dddfe0\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#b2ccd2\" condition=\"gradientBg&& bg.type=='color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#149dcc\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" condition=\"overlay&&bg.type !== 'color'\" value=\"#b2ccd2\">\n        \n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row main-row\">\n            <div class=\"text-content mb-4 col-lg-6\">\n                <h2 class=\"mb-4 mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Londýnský knižní veletrh 2021 online</b></h2>\n                <h3 class=\"mbr-fonts-style mbr-text align-left mbr-light\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text,.mbr-section-btn\"><br>Přihlašování do české expozice na národním stánku pro vystavovatele (nakladatele a tiskárny) je spuštěno. Hlásit se můžete až do 27. dubna 2021.\n<div>\n</div><div>Londýnský knižní veletrh se přesouvá do online prostoru pro rok 2021. Na další informace a pokyny od veletrhu čekáme. V případně potřeby kontaktujte <a href=\"mailto:klara.pribylova@mzk.cz\" class=\"text-primary\">klara.pribylova@mzk.cz</a></div><div><a href=\"mailto:klara.pribylova@mzk.cz\" class=\"text-primary\"><br></a></div></h3>\n                <div class=\"list counter-container col-12  mbr-fonts-style mbr-black\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article mbr-if=\"showList\">\n                    <ul>\n                        <li>Minimalistic, easy-to-use interface</li><li>Mobile-friendliness, latest website blocks and techniques</li><li>Free for both commercial and non-profit projects</li>\n                    </ul>\n                </div>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://docs.google.com/forms/d/1bPX1hG7M9HvGsa-aSieLCxtGQk2hvsZgDzQPVYq3uz8/viewform?edit_requested=true\" data-app-placeholder=\"Type Text\" target=\"_blank\">REGISTRAČNÍ FORMULÁŘ PRO ZÁJEMCE</a></div>\n            </div>\n     \n            <div class=\"mbr-figure col-lg-6\">\n                <img src=\"@PROJECT_PATH@/assets/images/earls-court-exhibition-centre-from-warwick-road-sw5-geograph.org.uk-1262513-640x479.jpeg\" alt=\"Mobirise\">\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_cid": "sv7AjgMRZp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "extHeader14-bk"
+        },
+        {
+          "alias": "mobirise4-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "type",
+          "_styles": {
+            "padding-top": "(@paddingTop * 20px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(90deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-overlay": {
+              "background": "linear-gradient(90deg, @overlayColor, @overlayColor2)"
+            },
+            ".mbr-section-btn": {
+              "margin-left": "-0.8rem"
+            },
+            ".text-content": {
+              "padding-right": "1.5rem",
+              "& when (@reverseContent)": {
+                "padding-right": "0",
+                "padding-left": "1.5rem"
+              }
+            },
+            ".main-row": {
+              "& when (@reverseContent)": {
+                "-webkit-flex-direction": "row-reverse",
+                "-ms-flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-text,.mbr-section-btn": {
+              "color": "#767676"
+            },
+            ".mbr-figure img": {
+              "-webkit-box-shadow": "0px 0px 30px fade(spin(desaturate(@infoColor, 75%), 12%), 30%)",
+              "box-shadow": "0px 0px 30px fade(spin(desaturate(@infoColor, 75%), 12%), 30%)",
+              "border-radius": ".25rem"
+            },
+            ".counter-container": {
+              "padding": "1rem 0",
+              "position": "relative",
+              "ul": {
+                "margin-bottom": "0",
+                "padding-left": "1.5rem",
+                "li": {
+                  "margin-bottom": "1rem",
+                  "& when (@stylizedCounters)": {
+                    "list-style": "none",
+                    "&:before": {
+                      "font-family": "MobiriseIcons !important",
+                      "content": "'\\e966'",
+                      "position": "absolute",
+                      "left": "0px",
+                      "padding-top": "2px",
+                      "display": "inline-block",
+                      "text-align": "center",
+                      "margin": "4px 0px",
+                      "line-height": "10px",
+                      "transition": "all .2s",
+                      "width": "16px",
+                      "height": "16px",
+                      "font-size": "16px !important",
+                      "font-weight": "500",
+                      "background": "none",
+                      "color": "@counterColor"
+                    }
+                  }
+                }
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".main-row": {
+                "margin": "0"
+              },
+              ".mbr-section-title,.mbr-text,.list,.mbr-section-btn": {
+                "text-align": "center !important"
+              },
+              ".text-content": {
+                "padding": "0"
+              }
+            }
+          },
+          "_name": "extHeader14",
+          "_sourceTheme": "directm4",
+          "_customHTML": "<section class=\"extHeader\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" plugins=\"mobirise-icons\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show List\" name=\"showList\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" condition=\"showList\">\n        <input type=\"color\" title=\"Counter Bg Color\" name=\"counterColor\" value=\"#188ef4\" condition=\"stylizedCounters&&showList\">\n        <input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background4-1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#dddfe0\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#b2ccd2\" condition=\"gradientBg&& bg.type=='color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#149dcc\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" condition=\"overlay&&bg.type !== 'color'\" value=\"#b2ccd2\">\n        \n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row main-row\">\n            <div class=\"text-content mb-4 col-lg-6\">\n                <h2 class=\"mb-4 mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Přihlašování na Frankfurtský knižní veletrh je spuštěno\n</b></h2>\n                <h3 class=\"mbr-fonts-style mbr-text align-left mbr-light\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text,.mbr-section-btn\"><div><br></div><div>Přihlašování do české expozice na národním stánku pro vystavovatele (nakladatele a tiskárny) je otevřeno. Hlásit se můžete až do 18. května 2021.</div><div><br></div></h3>\n                <div class=\"list counter-container col-12  mbr-fonts-style mbr-black\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article mbr-if=\"showList\">\n                    <ul>\n                        <li>Minimalistic, easy-to-use interface</li><li>Mobile-friendliness, latest website blocks and techniques</li><li>Free for both commercial and non-profit projects</li>\n                    </ul>\n                </div>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://forms.gle/RYGY8PiM48EKEEbn9\" data-app-placeholder=\"Type Text\" target=\"_blank\">REGISTRAČNÍ FORMULÁŘ PRO NAKLADATELE</a> <a class=\"btn btn-md btn-primary\" href=\"https://forms.gle/sVHBJg3Hn1JJABv49\" data-app-placeholder=\"Type Text\" target=\"_blank\">REGISTRAČNÍ FORMULÁŘ PRO TISKÁRNY</a></div>\n            </div>\n     \n            <div class=\"mbr-figure col-lg-6\">\n                <img src=\"@PROJECT_PATH@/assets/images/frankfurter-buchmesse-2015-halle-10-800x533.jpg\" alt=\"Foto: © JCS\">\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_anchor": "extHeader14-bl",
+          "_isUserblock": true,
+          "_cid": "sv7BAuj2yY",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -10586,6 +10689,104 @@
           "_cid": "si1Lu9kLmk",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": "mobirise4-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "type",
+          "_styles": {
+            "padding-top": "(@paddingTop * 20px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(90deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-overlay": {
+              "background": "linear-gradient(90deg, @overlayColor, @overlayColor2)"
+            },
+            ".mbr-section-btn": {
+              "margin-left": "-0.8rem"
+            },
+            ".text-content": {
+              "padding-right": "1.5rem",
+              "& when (@reverseContent)": {
+                "padding-right": "0",
+                "padding-left": "1.5rem"
+              }
+            },
+            ".main-row": {
+              "& when (@reverseContent)": {
+                "-webkit-flex-direction": "row-reverse",
+                "-ms-flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-text,.mbr-section-btn": {
+              "color": "#767676"
+            },
+            ".mbr-figure img": {
+              "-webkit-box-shadow": "0px 0px 30px fade(spin(desaturate(@infoColor, 75%), 12%), 30%)",
+              "box-shadow": "0px 0px 30px fade(spin(desaturate(@infoColor, 75%), 12%), 30%)",
+              "border-radius": ".25rem"
+            },
+            ".counter-container": {
+              "padding": "1rem 0",
+              "position": "relative",
+              "ul": {
+                "margin-bottom": "0",
+                "padding-left": "1.5rem",
+                "li": {
+                  "margin-bottom": "1rem",
+                  "& when (@stylizedCounters)": {
+                    "list-style": "none",
+                    "&:before": {
+                      "font-family": "MobiriseIcons !important",
+                      "content": "'\\e966'",
+                      "position": "absolute",
+                      "left": "0px",
+                      "padding-top": "2px",
+                      "display": "inline-block",
+                      "text-align": "center",
+                      "margin": "4px 0px",
+                      "line-height": "10px",
+                      "transition": "all .2s",
+                      "width": "16px",
+                      "height": "16px",
+                      "font-size": "16px !important",
+                      "font-weight": "500",
+                      "background": "none",
+                      "color": "@counterColor"
+                    }
+                  }
+                }
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".main-row": {
+                "margin": "0"
+              },
+              ".mbr-section-title,.mbr-text,.list,.mbr-section-btn": {
+                "text-align": "center !important"
+              },
+              ".text-content": {
+                "padding": "0"
+              }
+            }
+          },
+          "_name": "extHeader14",
+          "_sourceTheme": "directm4",
+          "_customHTML": "<section class=\"extHeader\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" plugins=\"mobirise-icons\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show List\" name=\"showList\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" condition=\"showList\">\n        <input type=\"color\" title=\"Counter Bg Color\" name=\"counterColor\" value=\"#188ef4\" condition=\"stylizedCounters&&showList\">\n        <input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background4-1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#b2ccd2\" condition=\"gradientBg&& bg.type=='color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#149dcc\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" condition=\"overlay&&bg.type !== 'color'\" value=\"#b2ccd2\">\n        \n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row main-row\">\n            <div class=\"text-content mb-4 col-lg-6\">\n                <h2 class=\"mb-4 mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Přihlašování na Frankfurtský knižní veletrh je spuštěno\n</b></h2>\n                <h3 class=\"mbr-fonts-style mbr-text align-left mbr-light\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text,.mbr-section-btn\"><div><br></div><div>Přihlašování do české expozice na národním stánku pro vystavovatele (nakladatele a tiskárny) je otevřeno. Hlásit se můžete až do 18. května 2021.</div><div><br></div></h3>\n                <div class=\"list counter-container col-12  mbr-fonts-style mbr-black\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article mbr-if=\"showList\">\n                    <ul>\n                        <li>Minimalistic, easy-to-use interface</li><li>Mobile-friendliness, latest website blocks and techniques</li><li>Free for both commercial and non-profit projects</li>\n                    </ul>\n                </div>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://forms.gle/RYGY8PiM48EKEEbn9\" data-app-placeholder=\"Type Text\" target=\"_blank\">REGISTRAČNÍ FORMULÁŘ PRO NAKLADATELE</a> <a class=\"btn btn-md btn-primary\" href=\"https://forms.gle/sVHBJg3Hn1JJABv49\" data-app-placeholder=\"Type Text\" target=\"_blank\">REGISTRAČNÍ FORMULÁŘ PRO TISKÁRNY</a></div>\n            </div>\n     \n            <div class=\"mbr-figure col-lg-6\">\n                <img src=\"@PROJECT_PATH@/assets/images/frankfurter-buchmesse-2015-halle-10-800x533.jpg\" alt=\"Foto: © JCS\">\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_anchor": "extHeader14-bm",
+          "_isUserblock": true,
+          "_cid": "sv7EmRn3Pi",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
