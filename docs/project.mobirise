@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "veletrhy.mzk.cz",
-    "currentPage": "veletrh-frankfurt.html",
+    "currentPage": "veletrh-lipsko.html",
     "theme": {
       "name": "directm4",
       "title": "DirectM4",
@@ -1067,201 +1067,6 @@
           "_anchor": "extFeatures41-3g",
           "_isUserblock": true,
           "_cid": "si7uEhekYB",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": "mobirise4-blocks/components",
-          "_isSecondary": true,
-          "typeCompatible": "type",
-          "_styles": {
-            "padding-top": "(@paddingTop * 20px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value",
-              "& when (@gradientBg)": {
-                "background": "linear-gradient(90deg, @bg-value, @color2)"
-              }
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-overlay": {
-              "background": "linear-gradient(90deg, @overlayColor, @overlayColor2)"
-            },
-            ".mbr-section-btn": {
-              "margin-left": "-0.8rem"
-            },
-            ".text-content": {
-              "padding-right": "1.5rem",
-              "& when (@reverseContent)": {
-                "padding-right": "0",
-                "padding-left": "1.5rem"
-              }
-            },
-            ".main-row": {
-              "& when (@reverseContent)": {
-                "-webkit-flex-direction": "row-reverse",
-                "-ms-flex-direction": "row-reverse"
-              }
-            },
-            ".mbr-text,.mbr-section-btn": {
-              "color": "#767676"
-            },
-            ".mbr-figure img": {
-              "-webkit-box-shadow": "0px 0px 30px fade(spin(desaturate(@infoColor, 75%), 12%), 30%)",
-              "box-shadow": "0px 0px 30px fade(spin(desaturate(@infoColor, 75%), 12%), 30%)",
-              "border-radius": ".25rem"
-            },
-            ".counter-container": {
-              "padding": "1rem 0",
-              "position": "relative",
-              "ul": {
-                "margin-bottom": "0",
-                "padding-left": "1.5rem",
-                "li": {
-                  "margin-bottom": "1rem",
-                  "& when (@stylizedCounters)": {
-                    "list-style": "none",
-                    "&:before": {
-                      "font-family": "MobiriseIcons !important",
-                      "content": "'\\e966'",
-                      "position": "absolute",
-                      "left": "0px",
-                      "padding-top": "2px",
-                      "display": "inline-block",
-                      "text-align": "center",
-                      "margin": "4px 0px",
-                      "line-height": "10px",
-                      "transition": "all .2s",
-                      "width": "16px",
-                      "height": "16px",
-                      "font-size": "16px !important",
-                      "font-weight": "500",
-                      "background": "none",
-                      "color": "@counterColor"
-                    }
-                  }
-                }
-              }
-            },
-            "@media (max-width: 991px)": {
-              ".main-row": {
-                "margin": "0"
-              },
-              ".mbr-section-title,.mbr-text,.list,.mbr-section-btn": {
-                "text-align": "center !important"
-              },
-              ".text-content": {
-                "padding": "0"
-              }
-            }
-          },
-          "_name": "extHeader14",
-          "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"extHeader\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" plugins=\"mobirise-icons\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show List\" name=\"showList\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" condition=\"showList\">\n        <input type=\"color\" title=\"Counter Bg Color\" name=\"counterColor\" value=\"#188ef4\" condition=\"stylizedCounters&&showList\">\n        <input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#dddfe0\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#b2ccd2\" condition=\"gradientBg&& bg.type=='color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#149dcc\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" condition=\"overlay&&bg.type !== 'color'\" value=\"#b2ccd2\">\n        \n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row main-row\">\n            <div class=\"text-content mb-4 col-lg-6\">\n                <h2 class=\"mb-4 mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Londýnský knižní veletrh 2021 online</b></h2>\n                <h3 class=\"mbr-fonts-style mbr-text align-left mbr-light\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text,.mbr-section-btn\"><br>Přihlašování do české expozice na národním stánku pro vystavovatele (nakladatele a tiskárny) je spuštěno. Hlásit se můžete až do 27. dubna 2021.\n<div>\n</div><div>Londýnský knižní veletrh se přesouvá do online prostoru pro rok 2021. Na další informace a pokyny od veletrhu čekáme. V případně potřeby kontaktujte <a href=\"mailto:klara.pribylova@mzk.cz\" class=\"text-primary\">klara.pribylova@mzk.cz</a></div><div><a href=\"mailto:klara.pribylova@mzk.cz\" class=\"text-primary\"><br></a></div></h3>\n                <div class=\"list counter-container col-12  mbr-fonts-style mbr-black\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article mbr-if=\"showList\">\n                    <ul>\n                        <li>Minimalistic, easy-to-use interface</li><li>Mobile-friendliness, latest website blocks and techniques</li><li>Free for both commercial and non-profit projects</li>\n                    </ul>\n                </div>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://docs.google.com/forms/d/1bPX1hG7M9HvGsa-aSieLCxtGQk2hvsZgDzQPVYq3uz8/viewform?edit_requested=true\" data-app-placeholder=\"Type Text\" target=\"_blank\">REGISTRAČNÍ FORMULÁŘ PRO ZÁJEMCE</a></div>\n            </div>\n     \n            <div class=\"mbr-figure col-lg-6\">\n                <img src=\"@PROJECT_PATH@/assets/images/earls-court-exhibition-centre-from-warwick-road-sw5-geograph.org.uk-1262513-640x479.jpeg\" alt=\"Mobirise\">\n            </div>\n\n        </div>\n    </div>\n</section>",
-          "_cid": "sv7AjgMRZp",
-          "_anchor": "extHeader14-bk",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": "mobirise4-blocks/components",
-          "_isSecondary": true,
-          "typeCompatible": "type",
-          "_styles": {
-            "padding-top": "(@paddingTop * 20px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value",
-              "& when (@gradientBg)": {
-                "background": "linear-gradient(90deg, @bg-value, @color2)"
-              }
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-overlay": {
-              "background": "linear-gradient(90deg, @overlayColor, @overlayColor2)"
-            },
-            ".mbr-section-btn": {
-              "margin-left": "-0.8rem"
-            },
-            ".text-content": {
-              "padding-right": "1.5rem",
-              "& when (@reverseContent)": {
-                "padding-right": "0",
-                "padding-left": "1.5rem"
-              }
-            },
-            ".main-row": {
-              "& when (@reverseContent)": {
-                "-webkit-flex-direction": "row-reverse",
-                "-ms-flex-direction": "row-reverse"
-              }
-            },
-            ".mbr-text,.mbr-section-btn": {
-              "color": "#767676"
-            },
-            ".mbr-figure img": {
-              "-webkit-box-shadow": "0px 0px 30px fade(spin(desaturate(@infoColor, 75%), 12%), 30%)",
-              "box-shadow": "0px 0px 30px fade(spin(desaturate(@infoColor, 75%), 12%), 30%)",
-              "border-radius": ".25rem"
-            },
-            ".counter-container": {
-              "padding": "1rem 0",
-              "position": "relative",
-              "ul": {
-                "margin-bottom": "0",
-                "padding-left": "1.5rem",
-                "li": {
-                  "margin-bottom": "1rem",
-                  "& when (@stylizedCounters)": {
-                    "list-style": "none",
-                    "&:before": {
-                      "font-family": "MobiriseIcons !important",
-                      "content": "'\\e966'",
-                      "position": "absolute",
-                      "left": "0px",
-                      "padding-top": "2px",
-                      "display": "inline-block",
-                      "text-align": "center",
-                      "margin": "4px 0px",
-                      "line-height": "10px",
-                      "transition": "all .2s",
-                      "width": "16px",
-                      "height": "16px",
-                      "font-size": "16px !important",
-                      "font-weight": "500",
-                      "background": "none",
-                      "color": "@counterColor"
-                    }
-                  }
-                }
-              }
-            },
-            "@media (max-width: 991px)": {
-              ".main-row": {
-                "margin": "0"
-              },
-              ".mbr-section-title,.mbr-text,.list,.mbr-section-btn": {
-                "text-align": "center !important"
-              },
-              ".text-content": {
-                "padding": "0"
-              }
-            }
-          },
-          "_name": "extHeader14",
-          "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"extHeader\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" plugins=\"mobirise-icons\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show List\" name=\"showList\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" condition=\"showList\">\n        <input type=\"color\" title=\"Counter Bg Color\" name=\"counterColor\" value=\"#188ef4\" condition=\"stylizedCounters&&showList\">\n        <input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background4-1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#dddfe0\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#b2ccd2\" condition=\"gradientBg&& bg.type=='color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#149dcc\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" condition=\"overlay&&bg.type !== 'color'\" value=\"#b2ccd2\">\n        \n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row main-row\">\n            <div class=\"text-content mb-4 col-lg-6\">\n                <h2 class=\"mb-4 mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Přihlašování na Frankfurtský knižní veletrh je spuštěno\n</b></h2>\n                <h3 class=\"mbr-fonts-style mbr-text align-left mbr-light\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text,.mbr-section-btn\"><div><br></div><div>Přihlašování do české expozice na národním stánku pro vystavovatele (nakladatele a tiskárny) je otevřeno. Hlásit se můžete až do 18. května 2021.</div><div><br></div></h3>\n                <div class=\"list counter-container col-12  mbr-fonts-style mbr-black\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article mbr-if=\"showList\">\n                    <ul>\n                        <li>Minimalistic, easy-to-use interface</li><li>Mobile-friendliness, latest website blocks and techniques</li><li>Free for both commercial and non-profit projects</li>\n                    </ul>\n                </div>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://forms.gle/RYGY8PiM48EKEEbn9\" data-app-placeholder=\"Type Text\" target=\"_blank\">REGISTRAČNÍ FORMULÁŘ PRO NAKLADATELE</a> <a class=\"btn btn-md btn-primary\" href=\"https://forms.gle/sVHBJg3Hn1JJABv49\" data-app-placeholder=\"Type Text\" target=\"_blank\">REGISTRAČNÍ FORMULÁŘ PRO TISKÁRNY</a></div>\n            </div>\n     \n            <div class=\"mbr-figure col-lg-6\">\n                <img src=\"@PROJECT_PATH@/assets/images/frankfurter-buchmesse-2015-halle-10-800x533.jpg\" alt=\"Foto: © JCS\">\n            </div>\n\n        </div>\n    </div>\n</section>",
-          "_anchor": "extHeader14-bl",
-          "_isUserblock": true,
-          "_cid": "sv7BAuj2yY",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -4616,7 +4421,7 @@
           },
           "_name": "content8",
           "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"content8 directm4_content8\" group=\"Content\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#000000\">\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-{{textWidth}}\">\n\t\t\t\t<div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-2\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-info-outline\" href=\"veletrh-lipsko.html\" data-app-placeholder=\"Type Text\">PROGRAM VELETRHU<br>(bude upřesněno)<br></a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_customHTML": "<section class=\"content8 directm4_content8\" group=\"Content\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#000000\">\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-{{textWidth}}\">\n\t\t\t\t<div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-2\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-info-outline\" href=\"https://www.ahojleipzig2019.de/cs/program\" data-app-placeholder=\"Type Text\" target=\"_blank\">PROGRAM VELETRHU<br></a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_cid": "smxhwXRvn4",
           "_anchor": "content8-7c",
           "_protectedParams": [],
@@ -8811,84 +8616,9 @@
           },
           "_name": "content2",
           "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"content2 directm4_content2\" group=\"Content\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"11\" step=\"1\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-{{textWidth}}\">\n\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n\t\t\t\t\tArticle Title\n\t\t\t\t</h3>\n\t\t\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n\t\t\t\t\tEnter your subtitle here\n\t\t\t\t</h4>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Londýnský knižní veletrh byl s ohledem na pandemii koronaviru přesunut do online prostředí. Moravská zemská knihovna vyjednala s veletrhem možnost digitálních prezentací nakladatelů z ČR za podmínek uvedených v <a href=\"assets/files/LBF-Online-NewConnectionsPackages.pdf\" class=\"text-primary\" target=\"_blank\">následujícím dokumentu.\n</a><br>\n<br>Pro bližší informace se na nás mohou zájemci z řad nakladatelů obrátit do konce května.<br></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_customHTML": "<section class=\"content2 directm4_content2\" group=\"Content\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"11\" step=\"1\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-{{textWidth}}\">\n\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n\t\t\t\t\tArticle Title\n\t\t\t\t</h3>\n\t\t\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n\t\t\t\t\tEnter your subtitle here\n\t\t\t\t</h4>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Londýnský knižní veletrh byl s ohledem na pandemii koronaviru přesunut do online prostředí. Moravská zemská knihovna vyjednala s veletrhem možnost digitálních prezentací nakladatelů z ČR za podmínek uvedených v <a href=\"assets/files/LBF-Online-NewConnectionsPackages.pdf\" class=\"text-primary\" target=\"_blank\">následujícím dokumentu.\n</a>Pro bližší informace se na nás mohou zájemci z řad nakladatelů obrátit do konce května.<br></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_cid": "steMEWZFek",
           "_anchor": "content2-b1",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            ".btn": {
-              "&.btn-primary-outline": {
-                "border": "1px solid @primaryColor",
-                "&:hover": {
-                  "background-color": "@primaryColor !important",
-                  "color": "#ffffff !important"
-                }
-              },
-              "&.btn-secondary-outline": {
-                "border": "1px solid @secondaryColor",
-                "&:hover": {
-                  "background-color": "@secondaryColor !important",
-                  "color": "#ffffff !important"
-                }
-              },
-              "&.btn-success-outline": {
-                "border": "1px solid @successColor",
-                "&:hover": {
-                  "background-color": "@successColor !important",
-                  "color": "#ffffff !important"
-                }
-              },
-              "&.btn-info-outline": {
-                "border": "1px solid @infoColor",
-                "&:hover": {
-                  "background-color": "@infoColor !important",
-                  "color": "#ffffff !important"
-                }
-              },
-              "&.btn-warning-outline": {
-                "border": "1px solid @warningColor",
-                "&:hover": {
-                  "background-color": "@warningColor !important",
-                  "color": "#ffffff !important"
-                }
-              },
-              "&.btn-danger-outline": {
-                "border": "1px solid @dangerColor",
-                "&:hover": {
-                  "background-color": "@dangerColor !important",
-                  "color": "#ffffff !important"
-                }
-              },
-              "&.btn-black-outline": {
-                "border": "1px solid #000000",
-                "&:hover": {
-                  "background-color": "#000000 !important",
-                  "color": "#ffffff !important"
-                }
-              },
-              "&.btn-white-outline": {
-                "border": "1px solid #ffffff",
-                "&:hover": {
-                  "background-color": "#ffffff !important",
-                  "color": "#000000 !important"
-                }
-              }
-            }
-          },
-          "_name": "content8",
-          "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"content8 directm4_content8\" group=\"Content\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-{{textWidth}}\">\n\t\t\t\t<div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-7\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://docs.google.com/forms/d/1bPX1hG7M9HvGsa-aSieLCxtGQk2hvsZgDzQPVYq3uz8/viewform?edit_requested=true\" data-app-placeholder=\"Type Text\" target=\"_blank\">REGISTRAČNÍ FORMULÁŘ PRO ZÁJEMCE</a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
-          "_cid": "steMFDzInP",
-          "_anchor": "content8-b2",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
