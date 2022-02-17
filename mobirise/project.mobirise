@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "veletrhy.mzk.cz_23.08.21",
-    "currentPage": "veletrh-lipsko.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "directm4",
       "title": "DirectM4",
@@ -47,7 +47,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 558,
+    "uniqCompNum": 559,
     "versionPublish": "5.5.0",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
@@ -4503,50 +4503,25 @@
         {
           "alias": false,
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "blockquote": {
+              "background-color": "fade(@textBg, 20%)",
+              "border-color": "@borderColor",
+              "border-width": "(@borderWidth * 1px)",
+              "color": "@textColor"
             },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value",
-              "& when (@gradientBg)": {
-                "background": "linear-gradient(to right top, @bg-value, @color2)"
-              }
-            },
-            "& when (@reverseContent)": {
-              ".row": {
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#ffffff"
-            },
-            ".mbr-section-title": {
-              "color": "#ffffff"
-            },
-            ".buttons-wrap": {
-              ".link": {
-                "display": "flex"
-              }
-            },
-            "@media (max-width: 768px)": {
-              "*": {
-                "text-align": "center"
-              },
-              ".buttons-wrap": {
-                "justify-content": "center"
-              }
+            ".mbr-text": {
+              "color": "#232323"
             }
           },
-          "_name": "header3",
+          "_name": "content4",
           "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#094587\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" condition=\"bg.type=='color'\" checked>\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#3adcdc\" condition=\"gradientBg &&bg.type=='color'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#094587\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-lg-7\">\n\t\t\t\t<div class=\"img-wrap mb-5\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/048_t2_buchmesse_abraham-1235x823.jpg\" alt=\"Lipský knižní veletrh 2019\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg-5\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white align-left mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Přihlášení na Lipský knižní veletrh 2022 je spuštěno!</h1>\n\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-4 mbr-white align-left\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubitle\">\n\t\t\t\t\tIntro With Media Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-white align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Chcete, aby se Vaše nakladatelství stalo součástí národní expozice v rámci Lipského knižního veletrhu? <br><br>Kontaktujte nás na e-mailu klara.pribylova@mzk.cz nebo prostřednictvím online přihlášky.</p>\n\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-md btn-primary\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSe2nYgoR-l05b8N2CUHu9NyW88w9BTIJrLo2rNrAPp3mHwgbw/viewform\" data-app-placeholder=\"Type Text\">Online přihláška pro nakladatele</a></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
-          "_anchor": "header3-et",
+          "_customHTML": "<section class=\"content4 directm4_content4\" group=\"Content\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n\t\t<input type=\"color\" title=\"Text Bg\" name=\"textBg\" value=\"#e5e5e5\">\n\t\t<input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#00bdd7\">\n\t\t<input type=\"color\" title=\"Text Color\" name=\"textColor\" value=\"#828282\">\n\t\t<input type=\"range\" name=\"borderWidth\" title=\"Border Width\" min=\"1\" max=\"15\" value=\"13\" step=\"1\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-{{textWidth}}\">\n\t\t\t\t<blockquote mbr-text class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Na Lipském knižním veletrhu se letos měli v rámci národní prezentace představit <a href=\"assets/files/MZK_KATALOG_LEIPZIG-140222.pdf\" class=\"text-primary\" target=\"_blank\">tito čeští nakladatelé</a>.</blockquote>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_anchor": "content4-fi",
           "_isUserblock": true,
-          "_cid": "sUu3NCGEdQ",
+          "_cid": "sXHon94mTn",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
