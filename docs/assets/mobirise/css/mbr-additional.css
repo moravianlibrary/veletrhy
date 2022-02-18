@@ -7024,33 +7024,6 @@ a {
     justify-content: center;
   }
 }
-.cid-sWhJRZfA8J {
-  padding-top: 4rem;
-  padding-bottom: 1rem;
-  background-color: #00a8c5;
-}
-.cid-sWhJRZfA8J .row {
-  flex-direction: row-reverse;
-}
-.cid-sWhJRZfA8J .mbr-text,
-.cid-sWhJRZfA8J .mbr-section-btn {
-  color: #ffffff;
-  text-align: left;
-}
-.cid-sWhJRZfA8J .mbr-section-title {
-  color: #ffffff;
-}
-.cid-sWhJRZfA8J .buttons-wrap .link {
-  display: flex;
-}
-@media (max-width: 768px) {
-  .cid-sWhJRZfA8J * {
-    text-align: center;
-  }
-  .cid-sWhJRZfA8J .buttons-wrap {
-    justify-content: center;
-  }
-}
 .cid-si1jyqWFj8 {
   padding-top: 90px;
   padding-bottom: 90px;
