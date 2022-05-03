@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "veletrhy.mzk.cz_23.08.21",
-    "currentPage": "veletrh-bologna.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "directm4",
       "title": "DirectM4",
@@ -47,7 +47,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 576,
+    "uniqCompNum": 580,
     "versionPublish": "5.5.0",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
@@ -1081,19 +1081,47 @@
               "padding-top": "(@paddingTop * 1rem)",
               "padding-bottom": "(@paddingBottom * 1rem)"
             },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(to right top, @bg-value, @color2)"
+              }
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".buttons-wrap": {
+              ".link": {
+                "display": "flex"
+              }
+            },
+            "@media (max-width: 768px)": {
+              "*": {
+                "text-align": "center"
+              },
+              ".buttons-wrap": {
+                "justify-content": "center"
+              }
             }
           },
-          "_name": "content1",
+          "_name": "header3",
           "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"content1 directm4_content1\" group=\"Content\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"4\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#efefef\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"title col-12 col-md-{{textWidth}}\">\n\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"></h3>\n\t\t\t\t<h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-4\">\n\t\t\t\t\tBy <b>John Smith</b> posted July 20, 2016\n\t\t\t\t</h4>\n\t\t\t\t<div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n\t\t\t\t\t<a class=\"btn btn-primary\" href=\"https://mobirise.co\">LEARN MORE</a>\n\t\t\t\t\t<a class=\"btn btn-primary-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
-          "_anchor": "content1-fd",
+          "_customHTML": "<section class=\"header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" checked>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#00a8c5\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#3adcdc\" condition=\"gradientBg &&bg.type=='color'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#094587\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-lg-7\">\n\t\t\t\t<div class=\"img-wrap mb-5\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/img_2377%20(1)-1235x823.jpeg\" alt=\"Ilustrační foto veletrhu\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg-5\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white align-left mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>PŘIHLÁŠENÍ NA&nbsp; KNIŽNÍ VELETRH VE FRANKFURTU NAD MOHANEM 2022&nbsp;</b><b><br></b><b>JE&nbsp;</b><b>SPUŠTĚNO!</b></h1>\n\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-4 mbr-white align-left\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubitle\">\n\t\t\t\t\tIntro With Media Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-white align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Chcete se stát součástí české národní expozice v rámci Knižního veletrhu ve Frankfurtu nad Mohanem, který se uskuteční 19. až 23. října 2022? <br><br>Kontaktujte nás na e-mailu klara.pribylova@mzk.cz nebo prostřednictvím online přihlášky:</p>\n\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-md btn-white\" href=\"https://docs.google.com/forms/d/e/1FAIpQLScqYGtJvkeE5i2O6GUZtoJPW4YY2bM03uDQdPra9WX8huVX3A/viewform\" data-app-placeholder=\"Type Text\" target=\"_blank\">Online přihláška pro nakladatele</a> <a class=\"btn btn-md btn-white\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSewgQ29TGwlWz1O0ho8ykS90h9qcsj2GboGSkOF3mYgl3ybvA/viewform\" data-app-placeholder=\"Type Text\" target=\"_blank\">Online přihláška pro tiskárny</a></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
+          "_anchor": "header3-g2",
           "_isUserblock": true,
-          "_cid": "sVOgJOWdbX",
+          "_cid": "t4LGvpqSt9",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -8555,6 +8583,86 @@
           },
           "_name": "content1",
           "_sourceTheme": "directm4",
+          "_customHTML": "<section class=\"content1 directm4_content1\" group=\"Content\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"title col-12 col-md-{{textWidth}}\">\n\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\"><b>\n\t\t\t\t\tProgram</b></h3>\n\t\t\t\t<h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-4\"></h4>\n\t\t\t\t<div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n\t\t\t\t\t<a class=\"btn btn-primary\" href=\"https://mobirise.co\">LEARN MORE</a>\n\t\t\t\t\t<a class=\"btn btn-primary-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_anchor": "content1-g1",
+          "_isUserblock": true,
+          "_cid": "sZALK1FSQe",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(to right top, @bg-value, @color2)"
+              }
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#111111"
+            },
+            ".mbr-section-title": {
+              "color": "#111111"
+            },
+            ".buttons-wrap": {
+              ".link": {
+                "display": "flex"
+              }
+            },
+            "@media (max-width: 768px)": {
+              "*": {
+                "text-align": "center"
+              },
+              ".buttons-wrap": {
+                "justify-content": "center"
+              }
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "directm4",
+          "_customHTML": "<section class=\"header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#00bdd7\" condition=\"gradientBg &&bg.type=='color'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#094587\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-lg-7\">\n\t\t\t\t<div class=\"img-wrap mb-5\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/logo_horiz-460x63.png\" alt=\"BCHBF\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg-5\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white align-left mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>Překladatel jako zprostředkovatel</b></h1>\n\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-4 mbr-white align-left\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubitle\">\n\t\t\t\t\tIntro With Media Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-white align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Kdy:<b> Úterý 22. března: 12:45 - 13:45 hod.\n</b><br>Místo konání: <b>Translator´s cafe\n</b><br>Moderátor: Michala Čičváková (České literární centrum)\n<br>\n<br>Diskuse překladatelky <b>Leny Dorn</b> (překladatelka z češtiny do němčiny) s nakladatelkou a překladatelkou <b>Terezou Horáthovou </b>(BAOBAB) o různých rolích překladatele a o vztahu překladatelů a nakladatelů.<br></p>\n\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-md btn-primary\" href=\"http://www.bolognachildrensbookfair.com/en/home/878.htmlobiri.se/\" data-app-placeholder=\"Type Text\" target=\"_blank\">Více zde.</a></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
+          "_anchor": "header3-g0",
+          "_isUserblock": true,
+          "_cid": "sZALI5VBuy",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-title": {
+              "color": "#00bdd7"
+            }
+          },
+          "_name": "content1",
+          "_sourceTheme": "directm4",
           "_customHTML": "<section class=\"content1 directm4_content1\" group=\"Content\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"title col-12 col-md-{{textWidth}}\">\n\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style align-center mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\"><b>\n\t\t\t\t\tVystavovatelé 2022</b></h3>\n\t\t\t\t<h4 class=\"mbr-section-subtitle align-center mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-4\"></h4>\n\t\t\t\t<div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n\t\t\t\t\t<a class=\"btn btn-primary\" href=\"https://mobirise.co\">LEARN MORE</a>\n\t\t\t\t\t<a class=\"btn btn-primary-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_anchor": "content1-fx",
           "_isUserblock": true,
@@ -9757,6 +9865,59 @@
           "_cid": "si1Lu9kLmk",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(to right top, @bg-value, @color2)"
+              }
+            },
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".buttons-wrap": {
+              ".link": {
+                "display": "flex"
+              }
+            },
+            "@media (max-width: 768px)": {
+              "*": {
+                "text-align": "center"
+              },
+              ".buttons-wrap": {
+                "justify-content": "center"
+              }
+            }
+          },
+          "_name": "header3",
+          "_sourceTheme": "directm4",
+          "_customHTML": "<section class=\"header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" checked=\"\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax=\"\">\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax=\"\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#00a8c5\" selected=\"\">\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#3adcdc\" condition=\"gradientBg &amp;&amp;bg.type=='color'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#094587\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-lg-7\">\n\t\t\t\t<div class=\"img-wrap mb-5\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/img_2377%20(1)-1235x823.jpeg\" alt=\"Ilustrační foto veletrhu\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg-5\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white align-left mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>PŘIHLÁŠENÍ NA&nbsp; KNIŽNÍ VELETRH VE FRANKFURTU NAD MOHANEM 2022&nbsp;</b><b><br></b><b>JE&nbsp;</b><b>SPUŠTĚNO!</b></h1>\n\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-4 mbr-white align-left\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubitle\">\n\t\t\t\t\tIntro With Media Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-white align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Chcete se stát součástí české národní expozice v rámci Knižního veletrhu ve Frankfurtu nad Mohanem, který se uskuteční 19. až 23. října 2022? <br><br>Kontaktujte nás na e-mailu klara.pribylova@mzk.cz nebo prostřednictvím online přihlášky:</p>\n\t\t\t\t<div class=\"buttons-wrap align-left align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t<div mbr-buttons=\"\" mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-md btn-white\" href=\"https://docs.google.com/forms/d/e/1FAIpQLScqYGtJvkeE5i2O6GUZtoJPW4YY2bM03uDQdPra9WX8huVX3A/viewform\" data-app-placeholder=\"Type Text\" target=\"_blank\">Online přihláška pro nakladatele</a> <a class=\"btn btn-md btn-white\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSewgQ29TGwlWz1O0ho8ykS90h9qcsj2GboGSkOF3mYgl3ybvA/viewform\" data-app-placeholder=\"Type Text\" target=\"_blank\">Online přihláška pro tiskárny</a></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow &amp;&amp; fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
+          "_anchor": "header3-g3",
+          "_isUserblock": true,
+          "_cid": "t4LI9BSx9G",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
