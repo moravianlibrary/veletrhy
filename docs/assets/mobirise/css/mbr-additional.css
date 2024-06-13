@@ -12773,6 +12773,91 @@ a {
     border: 1px solid rgba(0, 0, 0, 0.2);
   }
 }
+.cid-ufAdV1mYTA {
+  padding-top: 5rem;
+  padding-bottom: 0rem;
+  background-color: #efefef;
+}
+.cid-ufAedi7bsd {
+  padding-top: 0rem;
+  padding-bottom: 3rem;
+  background-color: #ffffff;
+}
+.cid-ufAedi7bsd .nav-tabs .nav-item.open .nav-link:focus,
+.cid-ufAedi7bsd .nav-tabs .nav-link.active:focus {
+  outline: none;
+}
+.cid-ufAedi7bsd .nav-tabs {
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .cid-ufAedi7bsd .nav-item {
+    width: 100%;
+    margin: 0;
+  }
+}
+.cid-ufAedi7bsd .nav-item .nav-link {
+  color: #00bdd7;
+  border-bottom: 4px solid transparent !important;
+}
+.cid-ufAedi7bsd .nav-item .nav-link.active {
+  color: #55595c;
+  border-bottom: 4px solid #00bdd7 !important;
+}
+.cid-ufAedi7bsd .nav-tabs .nav-link {
+  transition: all .5s;
+  border: none;
+}
+.cid-ufAedi7bsd .nav-tabs .nav-item {
+  margin-right: 1.5rem;
+}
+.cid-ufAedi7bsd .nav-link,
+.cid-ufAedi7bsd .nav-link.active {
+  padding: 1rem 0;
+  background-color: transparent;
+}
+.cid-ufAedi7bsd .mbr-text,
+.cid-ufAedi7bsd .mbr-section-btn {
+  color: #232323;
+}
+.cid-ufAedi7bsd .mbr-section-title {
+  color: #232323;
+}
+.cid-ufAedi7bsd .buttons-wrap .link {
+  display: flex;
+}
+.cid-ufAedi7bsd .list {
+  list-style: none;
+}
+.cid-ufAedi7bsd .list li {
+  position: relative;
+  margin-bottom: 15px;
+}
+.cid-ufAedi7bsd .list li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-top: 9px;
+  left: -25px;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: #00bdd7;
+}
+@media (max-width: 768px) {
+  .cid-ufAedi7bsd * {
+    text-align: center;
+  }
+  .cid-ufAedi7bsd .buttons-wrap {
+    justify-content: center;
+  }
+  .cid-ufAedi7bsd img {
+    margin-bottom: 20px;
+  }
+}
 .cid-tMvVFt8fvf {
   padding-top: 5rem;
   padding-bottom: 0rem;
@@ -13309,11 +13394,6 @@ a {
   .cid-smJtPKLUj6 .mbr-text {
     margin-bottom: 1.5rem;
   }
-}
-.cid-sUunYC30OX {
-  padding-top: 5rem;
-  padding-bottom: 0rem;
-  background-color: #efefef;
 }
 .cid-sn6LChOyOP {
   height: 0 !important;
