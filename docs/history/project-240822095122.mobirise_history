@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "veletrhy.mzk.cz",
-    "currentPage": "hostovani26.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "directm4",
       "title": "DirectM4",
@@ -47,7 +47,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 675,
+    "uniqCompNum": 672,
     "versionPublish": "5.5.0",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
@@ -25277,120 +25277,6 @@
           "_anchor": "content1-ic",
           "_isUserblock": true,
           "_cid": "ufAm3ohvpO",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value",
-              "& when (@gradientBg)": {
-                "background": "linear-gradient(to right top, @bg-value, @color2)"
-              }
-            },
-            "& when (@reverseContent)": {
-              ".row": {
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#000000",
-              "text-align": "left"
-            },
-            ".mbr-section-title": {
-              "color": "#000000",
-              "margin-bottom": "30px"
-            },
-            ".buttons-wrap": {
-              ".link": {
-                "display": "flex"
-              }
-            },
-            "@media (max-width: 768px)": {
-              "*": {
-                "text-align": "center"
-              },
-              ".buttons-wrap": {
-                "justify-content": "center"
-              }
-            },
-            ".mbr-section-title, .mbr-section-btn": {
-              "text-align": "left"
-            }
-          },
-          "_name": "content5",
-          "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"content5 directm4_content5\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Image Width\" name=\"imageWidth\" min=\"0\" max=\"10\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" checked>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#3adcdc\" condition=\"gradientBg &&bg.type=='color'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-lg-{{12-imageWidth}}\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-right\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Rakouská státní cena za literární překlad mi otevřela nové dveře, říká oceněný překladatel</h1>\n\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-right\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showSubitle\">\n\t\t\t\t\tIntro With Media Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-right\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Překladatel a spisovatel Ondřej Cikán získal prestižní Rakouskou státní cenu za literární překlad. Porota vyzdvihla jeho stylistickou mnohostrannost a neúnavnou práci na překladech české poezie a poetické prózy. V rozhovoru prozradil, jaká specifika českého jazyka a literatury ho přitahují nebo jak vnímá její postavení u německojazyčných čtenářů. Zeptali jsme se ho také na to, jak českým autorům a nakladatelům podle jeho pohledu pomůže Frankfurtský knižní veletrh, kde bude Česko v roce 2026 hostující zemí.<br></b><br><b>Gratuluji k obdržení Rakouské státní ceny za literární překlad. Jaký význam pro vás toto ocenění má a ovlivní nějak vaši další práci?\n</b><br>Děkuji. Ceny si velice vážím. Vyznamenala jaksi celé moje dílo, nejen to překladatelské, protože i má vlastní tvorba je spjata s překládáním. Na gymnáziu ve Vídni jsem začal psát básně, abych si nacvičil poetické možnosti německého jazyka pro překládání. A pak mě zas překládání z češtiny a starořečtiny inspirovalo k nápadům pro vlastní psaní. Velice mě potěšilo, že porota vyzdvihla mou stylistickou mnohostrannost, protože mi přesně na tom vždycky záleželo, naučit se nakládat s všelijakými žánry, registry a dobovými styly. Mou další práci to vyznamenání už ovlivňuje, byť trochu jinak, než jsem čekal. Otevřely se mi různé dveře.<br> \n<br><b>Existují nějaké specifické prvky v české literatuře, které vás jako překladatele zvlášť přitahují?\n</b><br>Určitě. Podle nich je vlastně vystavěný program nakladatelství Kétos, které jsem založil v roce 2018 jako stupínek pro českou poezii a poetickou prózu. Česká literatura je zajisté specifická svým výrazným obdobím poetismu a poetismem ovlivněného surrealismu. Neznám jinou literaturu, kde by byly ideály surrealismu – volné asociace, snovost, kloubení minulosti se současností či inspirace dobrodružnou četbou – tak pevně spjaty s důrazem na zvučnost poezie, na asonance, rýmy, rytmy. Francouzskému surrealismu tato poetická rovina chybí. Zajímají mě i předchůdci od Máchy přes symbolisty, a pak i následovníci poetismu, čerpající z jeho vymožeností, ať to byli Bondy a Vodseďálek nebo později J. H. Krchovský a mnozí dnešní básníci. Pak mě přitahují autoři, kteří nápaditě řádili mimo hlavní proudy: Josef Váchal, jehož dílo je zážitkem pro všechny smysly, nebo i Julius Zeyer, jenž se zvedal českou literaturu na kosmopolitní úroveň. Takové věci není lehké překládat, ale přesně to mě láká.<br><br><b>Jak si stojí česká literatura u německojazyčného publika? Čím je umí oslovit? \n</b><br>Kdybych krmil své děti výhradně suchými těstovinami s máslem, nikdy by se nenaučily jíst broskve. Němečtí čtenáři jsou zvyklí na prózu. Poezii z historických důvodů nedůvěřují, poškodil ji nacismus. Česká literatura se v posledních desetiletích stále více zaměřuje na export do Německa a přizpůsobuje se německému trhu, který prahne po próze o důležitých tématech, po depresivní próze, po srozumitelném předávání informací. Není divu, že českým exportním autorem, který německojazyčné čtenáře oslovuje nejvíc, je Franz Kafka, ačkoli nepsal česky a nebyl schopen popsat krásu ženy. Z vlastní zkušenosti ovšem vím, že se česká literatura za svou poetickou tradici nemusí stydět a že právě její poetičnost dokáže u německojazyčného publika vyvolat skutečné nadšení, pokud se podaří ji přesvědčivě přeložit.<br><br></p>\n\t\t\t\t<div class=\"buttons-wrap align-right align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg-{{imageWidth}}\">\n\t\t\t\t<div class=\"img-wrap mb-5\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/ondrejcikan1_c_ursular%C3%B6ck.jpg-1144x1716.jpg\" alt=\"Cikán\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
-          "_anchor": "content5-ip",
-          "_isUserblock": true,
-          "_cid": "umafT3r8tq",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value",
-              "& when (@gradientBg)": {
-                "background": "linear-gradient(to right top, @bg-value, @color2)"
-              }
-            },
-            "& when (@reverseContent)": {
-              ".row": {
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#000000",
-              "text-align": "left"
-            },
-            ".mbr-section-title": {
-              "color": "#000000",
-              "margin-bottom": "30px"
-            },
-            ".buttons-wrap": {
-              ".link": {
-                "display": "flex"
-              }
-            },
-            "@media (max-width: 768px)": {
-              "*": {
-                "text-align": "center"
-              },
-              ".buttons-wrap": {
-                "justify-content": "center"
-              }
-            },
-            ".mbr-section-title, .mbr-section-btn": {
-              "text-align": "left"
-            }
-          },
-          "_name": "content5",
-          "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"content5 directm4_content5\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Image Width\" name=\"imageWidth\" min=\"0\" max=\"10\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#3adcdc\" condition=\"gradientBg &&bg.type=='color'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-lg-{{12-imageWidth}}\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-right\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"></h1>\n\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-right\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showSubitle\">\n\t\t\t\t\tIntro With Media Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-right\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Česko bude hostující zemí na Frankfurtském knižním veletrhu v roce 2026. Jaký význam podle vás tato událost má pro současnou českou literaturu a její vnímání v zahraničí? \n</b><br>Propagovat českou literaturu v zahraničí je obtížné. Jsem pravidelně v kontaktu s různými německými a rakouskými nakladateli. Někteří mi tvrdili, že neprodali skoro nic ze svých překladů ze slovinštiny, a Slovinsko se na Frankfurt 2023 připravovalo velmi důkladně. Jednotlivým současným autorům veletrh určitě pomůže, ale nejsem si jist, zda se podaří prezentovat cosi jako výjimečnost české literatury, pokud se český program příliš přizpůsobí zavedenému německému vkusu. Nicméně je Frankfurtský veletrh velice významnou událostí, z níž lze vytěžit velmi mnoho. Lipský veletrh 2019, kde byla ČR také čestným hostem, českou literaturu určitě zviditelnil. I díky němu mám ostatně rakouskou státní cenu. Tenkrát Ministerstvo kultury ČR navýšilo podpory překladu, takže jsem rozjel Kétos a vydal ty své hromady Hlaváčků, Březinů, Nezvalů, Máchů, Váchalů i současných autorů a pořádal s podporou Českého literárního centra čtení.<br><br><b> \nJak by měla Česká republika tuto příležitost využít? Jaké aspekty české literatury by měly být na Frankfurtském veletrhu zdůrazněny?\n</b><br>Osobně bych vycházel z toho, že je česká literatura stále neznámá a že si potřebuje vybudovat jméno. Norské detektivky frčí, a tudíž je i zájem o norskou poezii, japonské Manga je světoznámé, a tudíž je i zájem o romány. Pro vytvoření jména určitě nestačí nejaktuálnější česká díla ani úspěchy jednotlivých knih. Proto bych se snažil prezentovat i klasiku a nějaké mimořádné objevy, abych ukázal, že tradice české literatury je jednak zasazena do toho a toho mezinárodního kontextu a jednak zásadně výjimečná v tom a tom. To a to nemusí být moje milovaná poetistická perspektiva, může to být i underground nebo čapkovský humanismus nebo dejme tomu Cimrman. Existuje mnoho scénářů, které budou schůdné, když se podaří je dotáhnout. Každopádně si myslím, že by hlavním cílem nemělo být jeden a půl bestselleru, ale vybudování zajímavé pověsti.<br><br><b>Na jaké literární projekty se nyní nejvíce těšíte? \n</b><br>Na hexametrický překlad vesmírné epopeje „Astronautilia“ Jana Křesadla. Je to velice vtipná a ojedinělá věc, kterou Křesadlo napsal v české i v starořecké verzi, a už tím vytahuje českou literaturu do světové sféry. Profesor Georg Danek, specialista na Homéra, se mnou pracuje na edici řeckého textu. Ta je nutná, protože se zatím vydal jen ofocený řecký rukopis, psaný čitelně, ale ne bez chyb. Zájem o takové dílo bude. V příštím semestru povedeme s panem Danekem o „Astronautilii“ kolokvium na Vídeňské univerzitě. S radostí překládám i vášnivý román „Žena“ Josefa Kocourka. Jinak píši v němčině poloepickou báseň o andělech z podsvětí, která má vyjít 2025, a složil jsem k ní japonistický soundtrack pro loutnu a cello. Své plány směrem k Frankfurtu jsem musel redukovat, protože mi na jaře 2024 poprvé nevyšly granty ze strany českého ministerstva a hrozilo, že neuživím rodinu. Tak jsem pozastavil překládání a hledal si jinou práci. V září začnu na gymnáziu vyučovat latinu – velmi se těším – a budu mít zas peníze i pro Ukrajinu, která musí zvítězit, abychom mohli dál vést rozhovory o literatuře.\n<br><b><br></b><br><b><br></b><br></p>\n\t\t\t\t<div class=\"buttons-wrap align-right align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg-{{imageWidth}}\">\n\t\t\t\t<div class=\"img-wrap mb-5\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/ondrejcikan_c_ursular%C3%B6ck.jpg-1144x1716.jpg\" alt=\"Cikán\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
-          "_anchor": "content5-iq",
-          "_isUserblock": true,
-          "_cid": "umakeq5uIR",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
