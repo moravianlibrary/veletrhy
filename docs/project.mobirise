@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "veletrhy.mzk.cz",
-    "currentPage": "veletrh-frankfurt.html",
+    "currentPage": "hostovaniVR.html",
     "theme": {
       "name": "directm4",
       "title": "DirectM4",
@@ -47,7 +47,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 712,
+    "uniqCompNum": 713,
     "versionPublish": "5.5.0",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
@@ -59,7 +59,9 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "mbrsiteDomain": "bdxbfmhtdu"
+    "mbrsiteDomain": "bdxbfmhtdu",
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "index.html": {
@@ -26627,10 +26629,34 @@
           },
           "_name": "content2",
           "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"content2 directm4_content2\" group=\"Content\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-{{textWidth}}\">\n\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\">Jak se soutěže zúčastnit?</h3>\n\t\t\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n\t\t\t\t\tEnter your subtitle here\n\t\t\t\t</h4>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><br><b>Podání nabídky\n</b><br>Účastníci soutěže dodají nabídku jejíž součástí bude:\n<br>\n<br>1.\tnávrh vizuální identity s jejím popisem\n<br>2.\tnávrh loga\n<br>3.\tvzorové použití navržené identity:\n<br>&nbsp; &nbsp; &nbsp;•\tcover banner na FB\n<br>&nbsp; &nbsp; &nbsp;•\thome page pro webovou stránku\n<br>&nbsp; &nbsp; &nbsp;•\tpoužití na reklamních předmětech\n<br>&nbsp; &nbsp; &nbsp;•\tplakát s literárním programem \n<br>&nbsp; &nbsp; &nbsp;•\tkatalog autorů - obálka a vnitřní strana\n<br>4.\t<b>podepsaná smlouva</b> na vytvoření vizuální identity <b>s uvedením ceny</b> za vytvoření loga, grafického manuálu a vytvoření šablon, cena <b>nesmí překročit 400.000,- vč. DPH\n</b><br>5.\tkrycí list s identifikací dodavatele\n<br>\n<br>Každý účastník může podat maximálně 2 návrhy. Návrhy musí být odevzdány v digitální formě ve formátu PDF.<br><br><b> \nVýběr nabídky a ocenění</b><br>V rámci soutěže bude stanovena komise, která posoudí návrhy dle jejich kvality a ekonomické výhodnosti a vybere <b>tři nejvýhodnější nabídky</b>, které budou oceněny finančními odměnami - každá ve výši <b>20.000,- Kč</b>.\n<br>\n<br>S účastníkem soutěže, jehož návrh se umístí <b>na prvním místě bude uzavřena smlouva.</b><br><b>\n</b><br><b>Odevzdání nabídky a lhůty</b><br>Nabídku je možné předložit:\n<br>•\tprostřednictvím Národního elektronického nástroje NEN (<a href=\"https://nen.nipez.cz/\" class=\"text-primary\" target=\"_blank\">https://nen.nipez.cz</a>)\n<br><b>nebo \n</b><br>•\tv elektronické podobě na e-mail <a href=\"mailto:martina.chmelarova@mzk.cz\" class=\"text-primary\">martina.chmelarova@mzk.cz</a> s uvedením předmětu e-mailu „NEOTVÍRAT – VZ IDENTITA A LOGO FRANKFURT 2026“<br>\n<br><b>Lhůta pro podání nabídek je stanovena do 16. 10. 2024 do 16:00 hodin.\n</b><br>\n<br><b>Podrobné podmínky soutěže \n</b><br><a href=\"assets/files/vyzva.pdf\" class=\"text-primary\" target=\"_blank\">výzva</a><br><a href=\"assets/files/smlouva.doc\" class=\"text-primary\" target=\"_blank\">návrh smlouvy</a><br><a href=\"assets/files/krycilist.docx\" class=\"text-primary\" target=\"_blank\">krycí list</a><br>\n<br>Veškeré dokumenty naleznete také na portálu <a href=\"https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-24-V00029131\" class=\"text-primary\" target=\"_blank\">NEN</a>. \n<br>\n<br><b>Kontakt\n</b><br>Případné dotazy v průběhu soutěže prosím zasílejte na e-mail <a href=\"mailto:martina.chmelarova@mzk.cz\" class=\"text-primary\">martina.chmelarova@mzk.cz</a>&nbsp;<br></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_customHTML": "<section class=\"content2 directm4_content2\" group=\"Content\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-{{textWidth}}\">\n\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\">Jak se soutěže zúčastnit?</h3>\n\t\t\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n\t\t\t\t\tEnter your subtitle here\n\t\t\t\t</h4>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><br><b>Podání nabídky\n</b><br>Účastníci soutěže dodají nabídku jejíž součástí bude:\n<br>\n<br>1.\tnávrh vizuální identity s jejím popisem\n<br>2.\tnávrh loga\n<br>3.\tvzorové použití navržené identity:\n<br>&nbsp; &nbsp; &nbsp;•\tcover banner na FB\n<br>&nbsp; &nbsp; &nbsp;•\thome page pro webovou stránku\n<br>&nbsp; &nbsp; &nbsp;•\tpoužití na reklamních předmětech\n<br>&nbsp; &nbsp; &nbsp;•\tplakát s literárním programem \n<br>&nbsp; &nbsp; &nbsp;•\tkatalog autorů - obálka a vnitřní strana\n<br>4.\t<b>podepsaná smlouva</b> na vytvoření vizuální identity <b>s uvedením ceny</b> za vytvoření loga, grafického manuálu a vytvoření šablon, cena <b>nesmí překročit 400.000,- vč. DPH\n</b><br>5.\tkrycí list s identifikací dodavatele\n<br>\n<br>Každý účastník může podat maximálně 2 návrhy. Návrhy musí být odevzdány v digitální formě ve formátu PDF.<br><br><b> \nVýběr nabídky a ocenění</b><br>V rámci soutěže bude stanovena komise, která posoudí návrhy dle jejich kvality a ekonomické výhodnosti a vybere <b>tři nejvýhodnější nabídky</b>, které budou oceněny finančními odměnami - každá ve výši <b>20 000 Kč</b>.\n<br>\n<br>S účastníkem soutěže, jehož návrh se umístí <b>na prvním místě bude uzavřena smlouva.</b><br><b>\n</b><br><b>Odevzdání nabídky a lhůty</b><br>Nabídku je možné předložit:\n<br>•\tprostřednictvím Národního elektronického nástroje NEN (<a href=\"https://nen.nipez.cz/\" class=\"text-primary\" target=\"_blank\">https://nen.nipez.cz</a>)\n<br><b>nebo \n</b><br>•\tv elektronické podobě na e-mail <a href=\"mailto:martina.chmelarova@mzk.cz\" class=\"text-primary\">martina.chmelarova@mzk.cz</a> s uvedením předmětu e-mailu „NEOTVÍRAT – VZ IDENTITA A LOGO FRANKFURT 2026“<br>\n<br><b>Lhůta pro podání nabídek je stanovena do 16. 10. 2024 do 16:00 hodin.\n</b><br>\n<br><b>Podrobné podmínky soutěže \n</b><br><a href=\"assets/files/vyzva.pdf\" class=\"text-primary\" target=\"_blank\">výzva</a><br><a href=\"assets/files/smlouva.doc\" class=\"text-primary\" target=\"_blank\">návrh smlouvy</a><br><a href=\"assets/files/krycilist.docx\" class=\"text-primary\" target=\"_blank\">krycí list</a><br>\n<br>Veškeré dokumenty naleznete také na portálu <a href=\"https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-24-V00029131\" class=\"text-primary\" target=\"_blank\">NEN</a>. \n<br>\n<br><b>Kontakt\n</b><br>Případné dotazy v průběhu soutěže prosím zasílejte na e-mail <a href=\"mailto:martina.chmelarova@mzk.cz\" class=\"text-primary\">martina.chmelarova@mzk.cz</a>&nbsp;<br></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_anchor": "content2-jd",
           "_isUserblock": true,
           "_cid": "uoJwiuUNgA",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "text-align": "left"
+            },
+            ".mbr-section-title": {
+              "color": "#000000"
+            }
+          },
+          "_name": "content2",
+          "_sourceTheme": "directm4",
+          "_customHTML": "<section class=\"content2 directm4_content2\" group=\"Content\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-{{textWidth}}\">\n\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Průběžný výsledek veřejné soutěže:</b></h3>\n\t\t\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n\t\t\t\t\tEnter your subtitle here\n\t\t\t\t</h4>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><br>Zadavatel <b>vybral </b>ze zaslaných návrhů <b>tři nejvýhodnější nabídky</b>. Tyto tři nejvýhodnější nabídky budou oceněny finančními odměnami, každá ve výši <b>20 000 Kč</b>.\n<br>\n<br>Nejlépe hodnocené nabídky (bez určení pořadí):\n<br>\n<br><b><a href=\"https://michoin.com/\" class=\"text-primary\" target=\"_blank\">Jan Michoin</a>\n</b><br>\n<br><b><a href=\"https://artishock.cz/cs\" class=\"text-primary\" target=\"_blank\">ARTISHOCK s. r. o.</a> \n</b><br>\n<br><b><a href=\"https://www.busek-dienstbier.cz/studio/\" class=\"text-primary\" target=\"_blank\">studio Bušek + Dienstbier</a></b><br>&nbsp;<br></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_anchor": "content2-js",
+          "_isUserblock": true,
+          "_cid": "usAEHgAIPu",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
