@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "veletrhy.mzk.cz",
-    "currentPage": "hostovani26.html",
+    "currentPage": "hostovaniVR.html",
     "theme": {
       "name": "directm4",
       "title": "DirectM4",
@@ -47,7 +47,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 725,
+    "uniqCompNum": 724,
     "versionPublish": "5.5.0",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
@@ -25635,30 +25635,6 @@
           "_anchor": "content2-ji",
           "_isUserblock": true,
           "_cid": "upY2ds0Cqr",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            ".mbr-text": {
-              "text-align": "left"
-            },
-            ".mbr-section-title": {
-              "color": "#00bdd7"
-            }
-          },
-          "_name": "content2",
-          "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"content2 directm4_content2\" group=\"Content\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-{{textWidth}}\">\n\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\"><b>VEŘEJNÉ PŘEDSTAVENÍ PROJEKTU</b></h3>\n\t\t\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n\t\t\t\t\tEnter your subtitle here\n\t\t\t\t</h4>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><br>V Městské knihovně v Praze proběhlo dne 4. 2. 2025 veřejné představení projektu hostování, tiskovou zprávu naleznete <a href=\"assets/files/TZ_predstaveni_projektu_hostovani_4.2.2025.pdf\" class=\"text-primary\" target=\"_blank\">zde</a>.<br></p>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
-          "_anchor": "content2-k4",
-          "_isUserblock": true,
-          "_cid": "uA87EZk2HB",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
