@@ -59,9 +59,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "mbrsiteDomain": "bdxbfmhtdu",
-    "publishType": "local",
-    "publishPath": "@PROJECT_PATH@"
+    "mbrsiteDomain": "bdxbfmhtdu"
   },
   "pages": {
     "index.html": {
