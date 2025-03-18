@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "veletrhy.mzk.cz",
-    "currentPage": "hostovani26.html",
+    "currentPage": "veletrh-lipsko.html",
     "theme": {
       "name": "directm4",
       "title": "DirectM4",
@@ -47,7 +47,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 744,
+    "uniqCompNum": 738,
     "versionPublish": "5.5.0",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
@@ -5089,30 +5089,6 @@
           "_anchor": "content4-gu",
           "_isUserblock": true,
           "_cid": "tB79nWvRBU",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            "blockquote": {
-              "background-color": "fade(@textBg, 20%)",
-              "border-color": "@borderColor",
-              "border-width": "(@borderWidth * 1px)",
-              "color": "@textColor"
-            }
-          },
-          "_name": "content4",
-          "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"content4 directm4_content4\" group=\"Content\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n\t\t<input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n\t\t<input type=\"color\" title=\"Text Bg\" name=\"textBg\" value=\"#e5e5e5\">\n\t\t<input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#00bdd7\">\n\t\t<input type=\"color\" title=\"Text Color\" name=\"textColor\" value=\"#828282\">\n\t\t<input type=\"range\" name=\"borderWidth\" title=\"Border Width\" min=\"1\" max=\"15\" value=\"13\" step=\"1\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-{{textWidth}}\">\n\t\t\t\t<blockquote mbr-text class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Tiskovou zprávu najdete <a href=\"assets/files/Lipsko-PRtextpodkl2025.pdf\" class=\"text-primary\" target=\"_blank\">zde</a>.</blockquote>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
-          "_anchor": "content4-kj",
-          "_isUserblock": true,
-          "_cid": "uFNLPeftgg",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -25987,234 +25963,6 @@
           "_anchor": "content1-ic",
           "_isUserblock": true,
           "_cid": "ufAm3ohvpO",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value",
-              "& when (@gradientBg)": {
-                "background": "linear-gradient(to right top, @bg-value, @color2)"
-              }
-            },
-            "& when (@reverseContent)": {
-              ".row": {
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#000000",
-              "text-align": "left"
-            },
-            ".mbr-section-title": {
-              "color": "#000000",
-              "margin-bottom": "30px"
-            },
-            ".buttons-wrap": {
-              ".link": {
-                "display": "flex"
-              }
-            },
-            "@media (max-width: 768px)": {
-              "*": {
-                "text-align": "center"
-              },
-              ".buttons-wrap": {
-                "justify-content": "center"
-              }
-            },
-            ".mbr-section-title, .mbr-section-btn": {
-              "text-align": "left"
-            }
-          },
-          "_name": "content5",
-          "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"content5 directm4_content5\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Image Width\" name=\"imageWidth\" min=\"0\" max=\"10\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" checked>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#3adcdc\" condition=\"gradientBg &&bg.type=='color'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-lg-{{12-imageWidth}}\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-right\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Český komiks si razí cestu do světa. Odvážná témata i originální styl otevírají dveře zahraničním vydáním</h1>\n\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-right\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showSubitle\">\n\t\t\t\t\tIntro With Media Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-right\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Čeští komiksoví tvůrci dokážou podle Pavlíny Juračkové z nakladatelství Paseka v zahraničí zaujmout. Jsou originální, nebojí se experimentovat a přicházejí s tématy, která jinde stále budí rozpaky. Na komiksovém festivalu v Angoulême Paseka letos dojednala nové spolupráce, včetně italského vydání komiksu Srdcovka od Štěpánky Jislové. Co zahraniční nakladatele na českých komiksech nejvíc přitahuje, proč je cesta na světový trh pořád složitá a co Paseka chystá, se dozvíte v následujícím rozhovoru.</b><br><b>\n</b><br><b>S jakými dojmy jste letos z Angoulême odjížděli? Čím vás festival nejvíc zaujal?</b><br>Na festivalu v Angoulême jsem byla letos poprvé, Paseka však měla zastoupení i v minulých ročnících – šéfredaktorem Jakubem Sedláčkem a art directorem Vojtou Sedláčkem. Festival nabízí rozsáhlou přehlídku současné komiksové produkce, ale zároveň si uchovává příjemně intimní atmosféru pro fanoušky i širokou veřejnost. Městečko se na několik dní promění v samostatný svět, kde na každém rohu narazíte tu na ilustraci, tu na komiksovou bublinu. Zároveň nechybí ani dobře zorganizované a funkční zázemí pro profesionály z oboru, nakladatele a literární agenty, což stále není samozřejmostí na poli knižních veletrhů a festivalů. Vysoká koncentrace toho nejlepšího na malém prostoru umožňuje zvládnout více naplánovaných schůzek i spontánních setkání než například na velkoformátových veletrzích.<br>\n<br><b>Podařilo se vám během festivalu navázat nové kontakty nebo dohodnout konkrétní spolupráci? Můžete prozradit detaily?</b><br>Ano, na festivalu jsem navázala řadu nových kontaktů, oživila starší rozjednané spolupráce a potřásla si rukou na italské vydání Srdcovky od Štěpánky Jislové. A pár týdnů po festivalu dorazila e-mailem konkrétní nabídka, jak bylo domluveno. Tohle je však ideální scénář, který není samozřejmostí. Ve světě komiksu je však Angoulême pro nakladatele a autory výjimečnou příležitostí k pravidelnému budování sítě funkčních vztahů.<br> \n<br>J<b>aký je podle vaší zkušenosti zájem zahraničních nakladatelů o český komiks? Je něco, co je na něm podle vás zvlášť přitahuje?\n</b><br>Myslím, že zájem každým rokem roste, zejména na Západě, což jde vlastně trochu proti trendu u prózy, kde je poměrně obtížné prosadit české spisovatele a spisovatelky. Mladí čeští autoři a ilustrátoři komiksů mají rozhodně co nabídnout – jak po tematické, tak po výtvarné stránce. Jsou originální a nebojí se přicházet se svěžími i tabuizovanými tématy, jako jsou queerness, alopecie, toxické vztahy aj. Několik komiksů z Paseky se aktuálně připravuje do angličtiny, francouzštiny, španělštiny, katalánštiny, italštiny nebo němčiny. Důkazem je například úspěch amerického vydání komiksového románu Bez vlasů od Terezy Čechové (roz. Drahoňovské) a Štěpánky Jislové, který Comics Journal zařadil mezi nejlepší komiksy roku 2024, nebo právě připravované italské vydání komiksového debutu Ani holka, ani kluk od výtvarnice Marto Kelbl. Italskou nakladatelku nadchlo, jak elegantně a jemně autorka pracuje s danou tematikou, a řekla si, že přesně taková kniha musí být i v italských knihkupectvích. Naopak ve východních zemích je přístup opatrnější – běžně se setkávám s reakcemi nakladatelů, že do svých portfolií hledají „jen“ superhrdinské komiksové příběhy. Situace se však i v těchto regionech každým rokem mění, mimo jiné díky setkáním a prezentacím na festivalech jako je Angoulême.<br>\n<br><b>Jaké bývají hlavní překážky pro vývoz českých komiksů do zahraničí a jak se je daří překonávat?\n</b><br>Je to klišé, ale často za tím stojí nedostatek financí, obavy z vysokých nákladů na vydání nebo jazyková bariéra. Z finančního hlediska jsou velkou podporou granty Ministerstva kultury České republiky, které mohou zahraničním nakladatelům částečně pokrýt náklady na vydání. Tohle může být skvělá motivace, ale ve finále je podle mě základ pořád stejný: mít kvalitní komiks v ruce, vyjet do zahraničí, setkávat se s redaktory a redaktorkami místních nakladatelství, zjišťovat, do jakého edičního plánu by se ten či onen komiks mohl hodit, a neúnavně se připomínat, čímž člověk neustále balancuje na hranici slušného chování.<br>\n<br><b>Jaké další plány má Paseka pro prezentaci českých komiksů v zahraničí?\n</b><br>Letos máme velké plány! Na jaře vyjde španělské vydání Naprosté šílenosti od Terezy a Tomáše Kopeckých a oba autoři se zúčastní výstavy ve Španělsku, kde připraví také workshop pro místní publikum. Na akci se spolu se španělským nakladatelem podílí České centrum v Madridu. Aktuálně také začínají přípravy na podzimní tour po USA s komiksovou Srdcovkou od Štěpánky Jislové. Velké díky patří CzechLitu a Českému centru v New Yorku, kteří se do akce zapojují coby organizační i finanční partneři amerického nakladatele. V neposlední řadě se letos i příští rok plně soustředíme na prodej práv do německy mluvících zemí s ohledem na české hostování ve Frankfurtu v roce 2026. Věřím, že za Paseku nabídneme to nejlepší z naší produkce.&nbsp;<br><br></p>\n\t\t\t\t<div class=\"buttons-wrap align-right align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg-{{imageWidth}}\">\n\t\t\t\t<div class=\"img-wrap mb-5\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/pavlina_jurackova_paseka-1144x1144.jpg\" alt=\"Pavlina Jurackova\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
-          "_anchor": "content5-kn",
-          "_isUserblock": true,
-          "_cid": "uFNRbHdCfa",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value",
-              "& when (@gradientBg)": {
-                "background": "linear-gradient(to right top, @bg-value, @color2)"
-              }
-            },
-            "& when (@reverseContent)": {
-              ".row": {
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#000000",
-              "text-align": "left"
-            },
-            ".mbr-section-title": {
-              "color": "#000000",
-              "margin-bottom": "30px"
-            },
-            ".buttons-wrap": {
-              ".link": {
-                "display": "flex"
-              }
-            },
-            "@media (max-width: 768px)": {
-              "*": {
-                "text-align": "center"
-              },
-              ".buttons-wrap": {
-                "justify-content": "center"
-              }
-            },
-            ".mbr-section-title, .mbr-section-btn": {
-              "text-align": "left"
-            }
-          },
-          "_name": "content5",
-          "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"content5 directm4_content5\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Image Width\" name=\"imageWidth\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#3adcdc\" condition=\"gradientBg &&bg.type=='color'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-lg-{{12-imageWidth}}\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-right\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Představili jsme projekt Czechia 2026 odborné veřejnosti</h1>\n\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-right\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showSubitle\">\n\t\t\t\t\tIntro With Media Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-right\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>V Městské knihovně v Praze proběhlo veřejné představení projektu Czechia 2026, který připravuje Česko na čestné hostování na Frankfurtském knižním veletrhu 2026. Během setkání zazněly klíčové informace o nadcházejících aktivitách, které mají posílit prezentaci české literatury v zahraničí.</b><br>\n<br>Projekt letos v říjnu vstupuje do <b>Roku české kultury</b>, jehož cílem je představit českou kulturu prostřednictvím výstav, autorských čtení a účasti na literárních festivalech v německojazyčných zemích.\n<br><br><br></p>\n\t\t\t\t<div class=\"buttons-wrap align-right align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg-{{imageWidth}}\">\n\t\t\t\t<div class=\"img-wrap mb-5\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/kubicek-1144x763.jpg\" alt=\"ředitel\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
-          "_anchor": "content5-km",
-          "_isUserblock": true,
-          "_cid": "uFNPlu7QIZ",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value",
-              "& when (@gradientBg)": {
-                "background": "linear-gradient(to right top, @bg-value, @color2)"
-              }
-            },
-            "& when (@reverseContent)": {
-              ".row": {
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#000000",
-              "text-align": "left"
-            },
-            ".mbr-section-title": {
-              "color": "#000000",
-              "margin-bottom": "30px"
-            },
-            ".buttons-wrap": {
-              ".link": {
-                "display": "flex"
-              }
-            },
-            "@media (max-width: 768px)": {
-              "*": {
-                "text-align": "center"
-              },
-              ".buttons-wrap": {
-                "justify-content": "center"
-              }
-            },
-            ".mbr-section-title, .mbr-section-btn": {
-              "text-align": "left"
-            }
-          },
-          "_name": "content5",
-          "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"content5 directm4_content5\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Image Width\" name=\"imageWidth\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" checked>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#3adcdc\" condition=\"gradientBg &&bg.type=='color'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-lg-{{12-imageWidth}}\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-right\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">Rakouská státní cena za literární překlad mi otevřela nové dveře, říká oceněný překladatel</h1>\n\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-right\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showSubitle\">\n\t\t\t\t\tIntro With Media Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-right\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Mottem samotné prezentace bude <b>„Česko – země na pobřeží“</b>. Metafora je inspirovaná Shakespearovou Zimní pohádkou a symbolizuje otevřenost české kultury a její propojení se světovou literaturou.<br><br>Na podpoře autorů, nakladatelů, překladatelů a dalších profesionálů z knižního průmyslu se podílí i řada významných partnerů. <b>Česko-německý fond budoucnosti</b> se stal partnerem Roku české kultury a poskytne mimořádnou podporu v celkové výši 7 000 000 korun na společné přeshraniční projekty spojené s hostováním ve Frankfurtu nad Mohanem. Je určena na aktivity, které propagují českou literaturu a kulturu v Německu, na podporu německých překladů české literatury a podporu překladatelů jako multiplikátorů česko-německé literární výměny. Informace o výzvě „Cesta k nám“ najdete na <a href=\"https://www.fondbudoucnosti.cz/podpora-projektu/#cesta-k-nam\" class=\"text-primary\" target=\"_blank\">webových stránkách ČNFB</a>.&nbsp;<b><br></b><br></p>\n\t\t\t\t<div class=\"buttons-wrap align-right align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg-{{imageWidth}}\">\n\t\t\t\t<div class=\"img-wrap mb-5\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/memorandum-1144x763.jpg\" alt=\"memorandum\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
-          "_anchor": "content5-kl",
-          "_isUserblock": true,
-          "_cid": "uFNOxNp9yA",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value",
-              "& when (@gradientBg)": {
-                "background": "linear-gradient(to right top, @bg-value, @color2)"
-              }
-            },
-            "& when (@reverseContent)": {
-              ".row": {
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#000000",
-              "text-align": "left"
-            },
-            ".mbr-section-title": {
-              "color": "#000000",
-              "margin-bottom": "30px"
-            },
-            ".buttons-wrap": {
-              ".link": {
-                "display": "flex"
-              }
-            },
-            "@media (max-width: 768px)": {
-              "*": {
-                "text-align": "center"
-              },
-              ".buttons-wrap": {
-                "justify-content": "center"
-              }
-            },
-            ".mbr-section-title, .mbr-section-btn": {
-              "text-align": "left"
-            }
-          },
-          "_name": "content5",
-          "_sourceTheme": "directm4",
-          "_customHTML": "<section class=\"content5 directm4_content5\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Image Width\" name=\"imageWidth\" min=\"0\" max=\"10\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n\t\t<input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#3adcdc\" condition=\"gradientBg &&bg.type=='color'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-12 col-lg-{{12-imageWidth}}\">\n\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-black align-right\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"></h1>\n\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-black align-right\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showSubitle\">\n\t\t\t\t\tIntro With Media Subtitle\n\t\t\t\t</h2>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-black align-right\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Také ministerstvo kultury ČR navýšilo v souvislosti s hostováním rozpočet na granty pro zahraniční překlady českých knih. Bližší informace k termínům a formě grantových žádostí jsou <a href=\"https://mk.gov.cz/podpora-vydani-ceske-literatury-v-prekladu-cs-517?fbclid=IwY2xjawI1AmpleHRuA2FlbQIxMAABHZBrWNfkBRPmwS3TESFEGWOH7yVtCwHGW1FeNqclKAF6Im_U94hlQrKImQ_aem_2cz4ImhIujHxZmO2vI7d6g\" class=\"text-primary\" target=\"_blank\">na webu ministerstva</a>.<br><br>Představen byl také základ <b>vizuální identity projektu Czechia 2026</b>, kterou vytvořilo studio Bušek+Dienstbier a která bude oficiálně uvedena na Frankfurtském knižním veletrhu 2025.<br> \n<br>Součástí příprav na hostování je i soutěž <a href=\"romanprofrankfurt.html\" class=\"text-primary\" target=\"_blank\">Román pro Frankfurt</a>. Chce objevit a podpořit dosud nevydané české romány, které mohou být klíčovou součástí prezentace české literatury na jednom z nejvýznamnějších literárních veletrhů světa. Výzva je otevřena všem česky píšícím autorům a autorkám – od začínajících spisovatelů až po zkušené tvůrce.<br>\n<br>Časovou osu projektu Czechia 2026 najdete na webu <a href=\"https://czechia2026.com/\" class=\"text-primary\" target=\"_blank\">www.czechia2026.com</a>.<b><br></b><br></p>\n\t\t\t\t<div class=\"buttons-wrap align-right align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\">Learn More</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-lg-{{imageWidth}}\">\n\t\t\t\t<div class=\"img-wrap mb-5\">\n\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/divaci-1144x763.jpg\" alt=\"divaci\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
-          "_anchor": "content5-kk",
-          "_isUserblock": true,
-          "_cid": "uFNMZwYEOZ",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
